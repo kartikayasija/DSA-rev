@@ -23,3 +23,19 @@ public:
         return mem[n][m];
     }
 };
+
+/*
+
+https://leetcode.com/problems/unique-paths-ii
+
+|_|____________|
+
+one box has two options to move,
+ to simply un dono options ko plus krdia
+ //bootom
+ //right
+
+f(n,m) = f(n+1, m) + f(n, m+1)
+
+
+*/
