@@ -62,3 +62,13 @@ public:
         return true;
     }
 };
+
+/*
+    https://leetcode.com/problems/n-queens
+
+    pehle sb jgh place kro
+    fr queen ki safety check kro
+
+    https://youtu.be/05y82cP3bJo?feature=shared
+
+*/
