@@ -18,8 +18,9 @@ public:
 
         //rec
         for(int i=idx; i<candidates.size();i++){
-            if (i > idx && candidates[i] == candidates[i - 1])
+            if (i > idx && candidates[i] == candidates[i - 1]){
                 continue;
+            }
             if(target<candidates[i]){
                 continue;
             }
@@ -27,6 +28,9 @@ public:
             temp.push_back(candidates[i]);
 
             f(candidates, temp, target - candidates[i], i+1);
+            /*
+                combination sum 1, 2 me inka index, for loop ke kaam hi aega
+            */
 
             //backtrack
             temp.pop_back();
