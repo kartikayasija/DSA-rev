@@ -11,6 +11,8 @@ public:
 
     void f(pair<int,int> &p, string str){
 
+
+        //base
         if(p.first==0 and p.second==0){
             result.push_back(str);
             return;
@@ -28,6 +30,8 @@ public:
             if(p.first > 0){
                 p.first--;
                 f(p, str+"(");
+
+                //backtrack
                 p.first++;
             }
 
@@ -37,3 +41,24 @@ public:
         }
     }
 };
+
+
+/*
+    if ( --> 3
+       ) --> 3
+
+       then only one choice,  choose (
+    
+    else 
+        ( --> 2
+        ) --> 3
+
+        then ((  or ()
+
+    if ( --> 0
+       ) --> 3
+
+        then one choice ) --> ) --> ) 
+                        2     1     0
+
+*/
