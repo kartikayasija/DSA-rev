@@ -10,6 +10,12 @@ public:
     }
 
     void f(string temp, int &n, int idx){
+
+        /* 
+            Can be further optimised
+            no need to count in every call as it is fixed;
+            memoise it, or make a global variable, set its value from main
+        */
         if(idx==countDigits(n)){
             return;
         }
@@ -24,7 +30,7 @@ public:
                 continue;
             }
             
-            result.push_back(number); //upar jaate huye print kara
+            result.push_back(number); //print before backtracking
             f(temp+to_string(i), n, idx+1);
         }
     }
