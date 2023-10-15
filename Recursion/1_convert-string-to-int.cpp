@@ -16,7 +16,7 @@ int convertToInt(string &str, int n){
 	//extract last number
 	int last = str[n-1]-'0';
 	
-	//recursive
+	//rec
 	int small_ans = convertToInt(str, n-1);
 
 	return small_ans*10+last;
