@@ -7,7 +7,6 @@
 
 <p>The matching should cover the <strong>entire</strong> input string (not partial).</p>
 
-<p>&nbsp;</p>
 <p><strong class="example">Example 1:</strong></p>
 
 <pre>
