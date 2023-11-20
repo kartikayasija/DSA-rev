@@ -10,8 +10,7 @@ public:
         return f(nums, 0, -1, memo);
     }
 
-    int f(vector<string>& nums, int idx, int prevIdx, vector<vector<int>>&memo) 
-    {
+    int f(vector<string>& nums, int idx, int prevIdx, vector<vector<int>>&memo) {
         //base
         if(idx == nums.size()) {
             return 0;
