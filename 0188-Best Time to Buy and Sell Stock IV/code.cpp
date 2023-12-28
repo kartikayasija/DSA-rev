@@ -11,7 +11,6 @@ public:
             return 0;
         }
 
-        //memo
         if(memo[idx][buy][maxTransaction] != -1) {
             return memo[idx][buy][maxTransaction];
         }
